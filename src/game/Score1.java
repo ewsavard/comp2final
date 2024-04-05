@@ -48,4 +48,4 @@ public class Score1 implements ScoreCounter1{
 	        return incorrectSymbol;
 	    }
 	}
-}
+

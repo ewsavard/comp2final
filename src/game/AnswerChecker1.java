@@ -32,7 +32,7 @@ import java.util.Scanner;
 			                return;
 			            }
 			            
-			        ArrayList<Question> selectedCategory = allQuestions.get(categoryIndex - 1);
+			        ArrayList<Question1> selectedCategory = allQuestions.get(categoryIndex - 1);
 			        // Print the questions in selected category
 			        for (int i = 1; i < selectedCategory.size(); i++) {
 			                System.out.println((i) + ". " + selectedCategory.get(i).getQuestion());
