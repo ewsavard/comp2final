@@ -1,10 +1,10 @@
 package game;
 import java.util.ArrayList;
 import java.util.List;
-public class PeopleQuestion1 extends ArrayList<Question> {
+public class PeopleQuestion1 extends ArrayList<Question1> {
 	    // Constructor
 	    public PeopleQuestion1(String question, ArrayList<String> answers) {
-	        add(new Question(question, answers));
+	        add(new Question1(question, answers));
 	    }
 	    public static PeopleQuestion1 definePeopleQuestions() {
 	        PeopleQuestion1 peopleQuestions = new PeopleQuestion1("", new ArrayList<>());

@@ -2,7 +2,7 @@ package game;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
-public class Score1 implements ScoreCounter{
+public class Score1 implements ScoreCounter1{
 
 	    private int score;
 	    private int tries;

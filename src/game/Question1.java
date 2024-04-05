@@ -20,7 +20,7 @@ public class Question1 {
 	    }
 	    
 	    //Check is user input is correct for culture
-	    public boolean cultureInputIsCorrect(ArrayList<Question> cultureQuestions, String userInput) {
+	    public boolean cultureInputIsCorrect(ArrayList<Question1> cultureQuestions, String userInput) {
 	    	if (cultureQuestions != null && cultureQuestions.size() > 0) {
 	            if (cultureQuestions.get(0) != null) { 
 	            if (userInput.matches("(?i)(water|wine|ice|cider|image carwash)")) {
@@ -77,7 +77,7 @@ public class Question1 {
 			} 
 	  
 	  //Check is user input is correct for people
-	    public boolean peopleInputIsCorrect(ArrayList<Question> peopleQuestions,String userInput) {
+	    public boolean peopleInputIsCorrect(ArrayList<Question1> peopleQuestions,String userInput) {
 	    	if (peopleQuestions != null && peopleQuestions.size() > 0) {
 	    		if (peopleQuestions.get(0) != null) {
 	    		if (userInput.matches("(?i)(brother|dog|birthday|phone number|wife)+")){
@@ -133,7 +133,7 @@ public class Question1 {
 	        	return false;
 	    }
 	  //Check is user input is correct for animal
-	    public boolean animalInputIsCorrect(ArrayList<Question> animalQuestions,String userInput) {
+	    public boolean animalInputIsCorrect(ArrayList<Question1> animalQuestions,String userInput) {
 	    	if (animalQuestions != null && animalQuestions.size() > 0) {
 	    		if (animalQuestions.get(0) != null) {
 	    		if (userInput.matches("(?i)(fart|dream|see color|see colors|have night vision|cry)+")){
@@ -189,7 +189,7 @@ public class Question1 {
 	        	return false;
 	    }
 	  //Check is user input is correct for food
-	    public boolean foodInputIsCorrect(ArrayList<Question> foodQuestions,String userInput) {
+	    public boolean foodInputIsCorrect(ArrayList<Question1> foodQuestions,String userInput) {
 	        if (foodQuestions != null && foodQuestions.size() > 0) {
 	        	if (foodQuestions.get(0) != null) {
 	        	if (userInput.matches("(?i)(chip|cookie|milk|cookie recipe|ice cream)+")){
@@ -248,6 +248,3 @@ public class Question1 {
 
 		
 		}
-
-
-}

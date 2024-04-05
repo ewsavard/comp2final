@@ -1,9 +1,9 @@
 package game;
 import java.util.ArrayList;
 import java.util.List;
-public class FoodQuestion1 extends ArrayList<Question>{
+public class FoodQuestion1 extends ArrayList<Question1>{
 		  public FoodQuestion1(String question, ArrayList<String> answers) {
-		        add(new Question(question, answers));
+		        add(new Question1(question, answers));
 		    }
 		    public static FoodQuestion1 defineFoodQuestions() {
 		        FoodQuestion1 foodQuestions = new FoodQuestion1("", new ArrayList<>());

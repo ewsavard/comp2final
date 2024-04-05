@@ -2,9 +2,9 @@ package game;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CultureQuestion1 extends ArrayList<Question> {
+public class CultureQuestion1 extends ArrayList<Question1> {
 	    public CultureQuestion1(String question, ArrayList<String> answers) {
-	        add(new Question(question, answers));
+	        add(new Question1(question, answers));
 	    }
 	    
 	    // Define culture questions

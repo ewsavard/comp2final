@@ -3,18 +3,18 @@ import java.util.ArrayList;
 import java.util.Scanner;
 	public class AnswerChecker1 {
 			public static void main(String[] args)  {
-			      ArrayList<Question> cultureQuestions = CultureQuestion1.defineCultureQuestions();
-			      ArrayList<Question> peopleQuestions = PeopleQuestion1.definePeopleQuestions();
-			      ArrayList<Question> animalQuestions = AnimalQuestion1.defineAnimalQuestions();
-			      ArrayList<Question> foodQuestions = FoodQuestion1.defineFoodQuestions();
+			      ArrayList<Question1> cultureQuestions = CultureQuestion1.defineCultureQuestions();
+			      ArrayList<Question1> peopleQuestions = PeopleQuestion1.definePeopleQuestions();
+			      ArrayList<Question1> animalQuestions = AnimalQuestion1.defineAnimalQuestions();
+			      ArrayList<Question1> foodQuestions = FoodQuestion1.defineFoodQuestions();
 			      
-			      ArrayList<ArrayList<Question>> allQuestions = new ArrayList<>();
+			      ArrayList<ArrayList<Question1>> allQuestions = new ArrayList<>();
 			      allQuestions.add((cultureQuestions));
 			      allQuestions.add((peopleQuestions));
 			      allQuestions.add((animalQuestions));
 			      allQuestions.add((foodQuestions));
 			      
-			      ScoreCounter score = new Score(3);
+			      ScoreCounter1 score = new Score1(3);
 			      Scanner scanner = new Scanner(System.in);
 			      
 			          // Prompt the user to choose a category
@@ -46,7 +46,7 @@ import java.util.Scanner;
 		                System.out.println("Invalid question number.");
 		                return;
 		            }
-		            Question selectedQuestion = selectedCategory.get(questionIndex);
+		            Question1 selectedQuestion = selectedCategory.get(questionIndex);
 		             System.out.println("Question: " + selectedQuestion.getQuestion());
 		            while (score.hasTriesLeft() && score.getScore()< 5) {
 		            // Get selected question and user input
