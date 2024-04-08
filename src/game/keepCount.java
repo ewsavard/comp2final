@@ -2,15 +2,15 @@ package game;
 
 public class keepCount {
 
-	public int score; 
-	public int guesses; 
-	public int round; 
-	public int highScore; 
-	private int count = 0; 
-	
-	
+	public int score;
+	public int guesses;
+	public int round;
+	public int highScore;
+	private int count = 0;
+
+
 	public void getScore(int x) {
-		this.score = x; 
+		this.score = x;
 		count++;
 	}
 	public void getGuesses(int x) {
@@ -20,7 +20,7 @@ public class keepCount {
 		this.round = x;
 	}
 	public void getHighscore() {
-		this.highScore += score; 
+		this.highScore += score;
 	}
 
 }

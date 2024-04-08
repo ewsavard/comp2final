@@ -9,18 +9,18 @@ import javafx.stage.Stage;
 
 public class StartScreen extends Application implements Initializable {
 
-	
-	@Override 
+
+	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		
+
 	}
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		
-		
+
+
 	}
-	
+
 	public static void main(String[] args) {
 		launch(args);
 	}

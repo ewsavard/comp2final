@@ -1,76 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.StartScreen">
-   <children>
-      <VBox alignment="CENTER" prefHeight="138.0" prefWidth="635.0" spacing="20.0">
-         <children>
-            <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Foogle Geud" textAlignment="CENTER" wrappingWidth="634.9367485046387">
-               <font>
-                  <Font name="Arial Narrow Bold" size="50.0" />
-               </font>
-            </Text>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Choose A Category ">
-               <font>
-                  <Font name="Arial Rounded MT Bold" size="19.0" />
-               </font>
-            </Text>
-         </children>
-      </VBox>
-      <Button layoutX="163.0" layoutY="154.0" mnemonicParsing="false" text="Culture ">
+  <children>
+     <VBox alignment="CENTER" layoutX="134.0" layoutY="150.0" prefHeight="0.0" prefWidth="501.0" spacing="20.0" />
+     <Button layoutX="180.0" layoutY="231.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="88.0" text="Culture ">
+        <font>
+           <Font size="16.0" />
+        </font>
+     </Button>
+     <Button layoutX="343.0" layoutY="231.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="88.0" text="People">
+        <font>
+           <Font size="16.0" />
+        </font>
+     </Button>
+     <Button layoutX="180.0" layoutY="302.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="88.0" text="Animals ">
+        <font>
+           <Font size="16.0" />
+        </font>
+     </Button>
+     <Button layoutX="343.0" layoutY="302.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="88.0" text="Food ">
+        <font>
+           <Font size="16.0" />
+        </font>
+     </Button>
+     <Text layoutX="110.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Round " textAlignment="CENTER" wrappingWidth="102.47343750000005">
+        <font>
+           <Font size="22.0" />
+        </font>
+     </Text>
+     <Text layoutX="142.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Num1">
+        <font>
+           <Font name="Monospaced Regular" size="16.0" />
+        </font>
+     </Text>
+     <Text layoutX="286.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score ">
+        <font>
+           <Font size="22.0" />
+        </font>
+     </Text>
+     <Text layoutX="296.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="num2">
+        <font>
+           <Font size="16.0" />
+        </font>
+     </Text>
+     <Text layoutX="440.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guesses">
+        <font>
+           <Font size="22.0" />
+        </font>
+     </Text>
+     <Text layoutX="457.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="num3" wrappingWidth="44.5367431640625">
+        <font>
+           <Font size="16.0" />
+        </font>
+     </Text>
+      <ImageView fitHeight="132.0" fitWidth="52.0" layoutX="60.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/Letter%20F.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="112.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/Oogle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="402.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/Feud%20Title.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="93.0" fitWidth="78.0" layoutX="324.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/51t3rskq.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="248.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose A Category" wrappingWidth="137.349609375">
          <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button layoutX="363.0" layoutY="154.0" mnemonicParsing="false" text="People">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button layoutX="161.0" layoutY="241.0" mnemonicParsing="false" text="Animals ">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button layoutX="366.0" layoutY="241.0" mnemonicParsing="false" text="Food ">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Text layoutX="112.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Round " textAlignment="CENTER" wrappingWidth="102.47343750000005">
-         <font>
-            <Font size="22.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
       </Text>
-      <Text layoutX="147.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Num1">
-         <font>
-            <Font name="Monospaced Regular" size="16.0" />
-         </font>
-      </Text>
-      <Text layoutX="306.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score ">
-         <font>
-            <Font size="22.0" />
-         </font>
-      </Text>
-      <Text layoutX="311.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="num2">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Text>
-      <Text layoutX="451.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guesses">
-         <font>
-            <Font size="22.0" />
-         </font>
-      </Text>
-      <Text layoutX="468.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="num3" wrappingWidth="44.5367431640625">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Text>
-   </children>
+      <MenuBar layoutY="2.0" prefHeight="26.0" prefWidth="634.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Home">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Re-Try" />
+              <MenuItem mnemonicParsing="false" text="Exit" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="More" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+  </children>
 </Pane>
