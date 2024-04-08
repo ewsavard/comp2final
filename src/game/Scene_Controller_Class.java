@@ -47,8 +47,8 @@ public class Scene_Controller_Class {
 		stage.show();
 	}
 	public void switch_to_food(ActionEvent event) throws IOException{
-		JButton food =  new JButton("food");
-		Parent new_window_parent = FXMLLoader.load(getClass().getResource("animal.fxml"));
+		JButton food =  new JButton("Food");
+		Parent new_window_parent = FXMLLoader.load(getClass().getResource("food.fxml"));
 		food.setAction((Action) this);
 		Scene  new_window_scene = new Scene (new_window_parent);
 		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -56,7 +56,7 @@ public class Scene_Controller_Class {
 		stage.show();
 	}
 	public void switch_to_people(ActionEvent event) throws IOException{
-		JButton people =  new JButton("people");
+		JButton people =  new JButton("People");
 		people.setAction((Action) this);
 		Parent new_window_parent = FXMLLoader.load(getClass().getResource("people.fxml"));
 		Scene  new_window_scene = new Scene (new_window_parent);
