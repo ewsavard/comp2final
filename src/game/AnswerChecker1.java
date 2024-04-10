@@ -15,20 +15,12 @@ import java.util.Scanner;
 			      allQuestions.add((foodQuestions));
 			      
 			      ScoreCounter1 score = new Score1(3);
-			      Scanner scanner = new Scanner(System.in);
+			     			          // Prompt the user to choose a category
 			      
-			          // Prompt the user to choose a category
-			      System.out.println("Which category of question do you want to answer?");
-			      System.out.println("1. Culture");
-			      System.out.println("2. People");
-			      System.out.println("3. Animal");
-			      System.out.println("4. Food");
-			      System.out.print("Enter the number of the category: ");
-			        int categoryIndex = scanner.nextInt();
-			            scanner.nextLine(); 
+			        int categoryIndex = 4;
 
 			        if (categoryIndex < 1 || categoryIndex > allQuestions.size()) {
-			                System.out.println("Invalid category number.");
+			               
 			                return;
 			            }
 			            
@@ -39,8 +31,8 @@ import java.util.Scanner;
 			            }
 			        // Which question does user want to answer?
 			        System.out.print("Enter the number of the question you want to answer: ");
-		            int questionIndex = scanner.nextInt();
-		            scanner.nextLine(); 
+		            int questionIndex = 4;
+		           
 		           
 		            if (questionIndex < 1 || questionIndex > selectedCategory.size()) {
 		                System.out.println("Invalid question number.");
@@ -52,8 +44,8 @@ import java.util.Scanner;
 		            // Get selected question and user input
 		           
 		        
-		            System.out.print("Enter your answer: ");
-		            String userInput = scanner.nextLine();
+		            
+		            String userInput = "";
 		            if (selectedQuestion.cultureInputIsCorrect(cultureQuestions, userInput)
 		            		||selectedQuestion.peopleInputIsCorrect(peopleQuestions, userInput)
 		            		|| selectedQuestion.animalInputIsCorrect(animalQuestions, userInput)
@@ -68,13 +60,13 @@ import java.util.Scanner;
 					            System.out.println("Tries left: " + score.getTriesLeft());
 					        }
 					    }
-		            if (score.getScore() == 5) {
-		            	scanner.close();
-		                 System.out.println("Congratulations! You have guessed all possible answers correctly for this question.");
-		                 System.out.println(selectedQuestion.getAnswers());
-		             }else {
-		            scanner.close();
-		            System.out.println("Game over!");
-		             } 
+//		            if (score.getScore() == 5) {
+//		            	scanner.close();
+//		                 System.out.println("Congratulations! You have guessed all possible answers correctly for this question.");
+//		                 System.out.println(selectedQuestion.getAnswers());
+//		             }else {
+//		            scanner.close();
+//		            System.out.println("Game over!");
+//		             } 
 			        }
 	}

@@ -2,6 +2,9 @@ package game;
 import java.util.ArrayList;
 import java.util.List;
 public class FoodQuestion1 extends ArrayList<Question1>{
+	
+	public ArrayList questions;
+	
 		  public FoodQuestion1(String question, ArrayList<String> answers) {
 		        add(new Question1(question, answers));
 		    }
@@ -29,4 +32,6 @@ public class FoodQuestion1 extends ArrayList<Question1>{
 						new ArrayList<>(List.of("watermelon", "cantaloupe", "mango", "peach", "avocado"))));
 				return foodQuestions;
 		    }
+		    
+		    
 	}
