@@ -6,7 +6,7 @@ import java.util.ResourceBundle;
 import javafx.application.Application;
 import javafx.fxml.Initializable;
 import javafx.stage.Stage;
-
+/*
 public class StartScreen extends Application implements Initializable {
 
 
@@ -25,3 +25,4 @@ public class StartScreen extends Application implements Initializable {
 		launch(args);
 	}
 }
+*/

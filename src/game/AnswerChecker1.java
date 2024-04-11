@@ -16,8 +16,9 @@ import java.util.Scanner;
 			      allQuestions.add((foodQuestions));
 			      
 			      ScoreCounter1 score = new Score1(3);
-			      Scanner scanner = new Scanner(System.in);
+			     			          // Prompt the user to choose a category
 			      
+<<<<<<< HEAD
 			         // Prompt the user to choose a category
 			      System.out.println("Which category of question do you want to answer?");
 			      System.out.println("1. Culture");
@@ -27,9 +28,17 @@ import java.util.Scanner;
 			      System.out.print("Enter the number of the category: ");
 			      int categoryIndex = scanner.nextInt();
 			         scanner.nextLine(); 
+=======
+			        int categoryIndex = 4;
+>>>>>>> refs/remotes/origin/main
 
+<<<<<<< HEAD
 			       if (categoryIndex < 1 || categoryIndex > allQuestions.size()) {
 			                System.out.println("Invalid category number.");
+=======
+			        if (categoryIndex < 1 || categoryIndex > allQuestions.size()) {
+			               
+>>>>>>> refs/remotes/origin/main
 			                return;
 			            }
 			            
@@ -40,8 +49,13 @@ import java.util.Scanner;
 			            }
 			        // Which question does user want to answer?
 			        System.out.print("Enter the number of the question you want to answer: ");
+<<<<<<< HEAD
 			        int questionIndex = scanner.nextInt();
 		            scanner.nextLine(); 
+=======
+		            int questionIndex = 4;
+		           
+>>>>>>> refs/remotes/origin/main
 		           
 		            if (questionIndex < 1 || questionIndex > selectedCategory.size()) {
 		                System.out.println("Invalid question number.");
@@ -53,10 +67,16 @@ import java.util.Scanner;
 		            // Get selected question and user input
 		           
 		        
+<<<<<<< HEAD
 		            System.out.print("Enter your answer: ");
 		            
 		            
 					if (selectedQuestion.cultureInputIsCorrect(cultureQuestions, userInput)
+=======
+		            
+		            String userInput = "";
+		            if (selectedQuestion.cultureInputIsCorrect(cultureQuestions, userInput)
+>>>>>>> refs/remotes/origin/main
 		            		||selectedQuestion.peopleInputIsCorrect(peopleQuestions, userInput)
 		            		|| selectedQuestion.animalInputIsCorrect(animalQuestions, userInput)
 		            		|| selectedQuestion.foodInputIsCorrect(foodQuestions, userInput)) {
@@ -70,6 +90,7 @@ import java.util.Scanner;
 					            System.out.println("Tries left: " + score.getTriesLeft());
 					        }
 					    }
+<<<<<<< HEAD
 		            if (score.getScore() == 5) {
 		            	scanner.close();
 		                 //System.out.println("Congratulations! You have guessed all possible answers correctly for this question.");
@@ -78,6 +99,16 @@ import java.util.Scanner;
 		           scanner.close();
 		            System.out.println("Game over!");
 		             } 
+=======
+//		            if (score.getScore() == 5) {
+//		            	scanner.close();
+//		                 System.out.println("Congratulations! You have guessed all possible answers correctly for this question.");
+//		                 System.out.println(selectedQuestion.getAnswers());
+//		             }else {
+//		            scanner.close();
+//		            System.out.println("Game over!");
+//		             } 
+>>>>>>> refs/remotes/origin/main
 			        }
 			        */
 	}

@@ -10,11 +10,12 @@ import java.util.ResourceBundle;
 
 import javafx.application.Application;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class Animal_Controller extends Application implements Initializable {
-
+/*public class Animal_Controller extends Application implements Initializable {
+	TextField myTextField;
 	public Animal_Controller() {
 		// TODO Auto-generated constructor stub
 	}
@@ -30,18 +31,25 @@ public class Animal_Controller extends Application implements Initializable {
 		// TODO Auto-generated method stub
 
 	}
+	
 
 	public void Question_random() throws IOException {
-		ArrayList<String> my_list = new ArrayList<String>();
-		my_list.add("Do cats");
-		my_list.add("Do  fish ever");
-		my_list.add("Is my cat ");
-		my_list.add("My dog ate my");
-		my_list.add("Why are dogs");
-		my_list.add("Is my bird");
-		my_list.add("Where do ____ live");
-		my_list.add("Do wolves");
-		my_list.add("Do snakes");
+		
+		
+		String[] my_list = {"Do cats","Do  fish ever"};
+		String[] my_answers = {"poop ","sleep"};
+	
+		
+		
+		ArrayList<String> my_lis2t = new ArrayList<String>();
+		
+		
+		if (my_list.equals(my_answers)) {
+			
+			
+			
+			
+		}
 
 		Collections.shuffle(my_list); // this is the random aspect of this question:
 
@@ -59,3 +67,4 @@ public class Animal_Controller extends Application implements Initializable {
 	}
 
 }
+*/

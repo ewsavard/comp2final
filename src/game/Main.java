@@ -1,6 +1,7 @@
 package game;
 
-import java.awt.event.ActionEvent;
+
+import javafx.event.ActionEvent;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -24,7 +25,7 @@ public class Main extends Application implements Initializable{
 	
 	public Stage stage;
 	private Scene scene; 
-	private Parent parent_roots; 
+	private Parent root; 
 
 	@Override
 	public void start(Stage primaryStage) {
@@ -33,7 +34,7 @@ public class Main extends Application implements Initializable{
 
 		try {
 			//BorderPane root = new BorderPane();
-			final Parent root = FXMLLoader.load(getClass().getResource("MainScene.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("MainScene.fxml"));
 			Scene scene = new Scene(root);
 			//scene.getStylesheets().add(getClass().getResource("Main").toExternalForm());
 
@@ -41,7 +42,7 @@ public class Main extends Application implements Initializable{
 
 			//AnimalCategory.setOnAction(e-> scene.setFill(Color.BLACK));
 
-			primaryStage.setTitle("Foogle Geud!");
+			//primaryStage.setTitle("Foogle Geud!");
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(IOException e) {
@@ -60,20 +61,33 @@ public class Main extends Application implements Initializable{
 	}
 	
 	@FXML
+	///public void switching_to_culture_first(ActionEvent event) throws IOException {
+	//	Parent root = FXMLLoader.load(getClass().getResource("MainScene.fxml"));
+	//	stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+	//	scene = new Scene (root);
+	///	stage.setScene(scene);
+	///	stage.show();
+	///}
+	public void switching_to_scenes(ActionEvent event) throws IOException {
+		root = FXMLLoader.load(getClass().getResource("MainScene.fxml"));
+		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		scene = new Scene (root);
+		stage.setScene(scene);
+		stage.show();
+	}
+	
 	public void switch_to_culture(ActionEvent event) throws IOException{
-		JButton culture =  new JButton("Culture");
-		Parent new_window_parent = FXMLLoader.load(getClass().getResource("CultureScreeen.fxml"));
-		culture.setAction((Action) this);
-		Scene new_window_scene = new Scene (new_window_parent);
-		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-		window.setScene(new_window_scene);
+		root = FXMLLoader.load(getClass().getResource("culturefxml.fxml"));
+		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		scene = new Scene (root);
+		stage.setScene(scene);
 		stage.show();
 	}
 
 	@FXML
 	public void switch_to_animal(ActionEvent event) throws IOException{
 		JButton Animal =  new JButton("Animal");
-		Parent new_window_parent = FXMLLoader.load(getClass().getResource("animal.fxml"));
+		Parent new_window_parent = FXMLLoader.load(getClass().getResource("animalsfxml.fxml"));
 		Animal.setAction((Action) this);
 		Scene  new_window_scene = new Scene (new_window_parent);
 		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -83,7 +97,7 @@ public class Main extends Application implements Initializable{
 	@FXML
 	public void switch_to_food(ActionEvent event) throws IOException{
 		JButton food =  new JButton("Food");
-		Parent new_window_parent = FXMLLoader.load(getClass().getResource("food.fxml"));
+		Parent new_window_parent = FXMLLoader.load(getClass().getResource("foodfxml.fxml"));
 		food.setAction((Action) this);
 		Scene  new_window_scene = new Scene (new_window_parent);
 		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -92,9 +106,9 @@ public class Main extends Application implements Initializable{
 	}
 	@FXML
 	public void switch_to_people(ActionEvent event) throws IOException{
-		JButton people =  new JButton("People");
+		JButton people =  new JButton();
 		people.setAction((Action) this);
-		Parent new_window_parent = FXMLLoader.load(getClass().getResource("people.fxml"));
+		Parent new_window_parent = FXMLLoader.load(getClass().getResource("peoplefxml.fxml"));
 		Scene  new_window_scene = new Scene (new_window_parent);
 		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
 		window.setScene(new_window_scene);
@@ -106,6 +120,8 @@ public class Main extends Application implements Initializable{
 	
 	
 	
+
+
 }
 
 
