@@ -47,7 +47,7 @@ public class AnimalQuestion1 extends ArrayList<Question1>{
 		
 		
 		
-	    
+  	    
 	    }
 	    // text boxes in fxml ONce import used .setText
 	
