@@ -6,10 +6,13 @@ public class CultureQuestion1 extends ArrayList<Question1> {
 	    public CultureQuestion1(String question, ArrayList<String> answers) {
 	        add(new Question1(question, answers));
 	    }
+	   
+		  
 	    
 	    // Define culture questions
 	    public static CultureQuestion1 defineCultureQuestions() {
-	        CultureQuestion1 cultureQuestions = new CultureQuestion1("", new ArrayList<>());
+	       
+	    	CultureQuestion1 cultureQuestions = new CultureQuestion1("", new ArrayList<>());
 	        cultureQuestions.add(new Question1("Sparkling ____",
 	                new ArrayList<>(List.of("water", "wine", "ice", "cider", "image carwash"))));
 	        cultureQuestions.add(new Question1("Studio ____",
@@ -31,5 +34,8 @@ public class CultureQuestion1 extends ArrayList<Question1> {
 	        cultureQuestions.add(new Question1("Pumpkin spice ____",
 	                new ArrayList<>(List.of("cake", "latte", "recipe", "creamer", "coffee"))));
 	        return cultureQuestions;
-	    }
+	    
+	        
+	        
+	         }
 	}
