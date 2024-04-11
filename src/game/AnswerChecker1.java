@@ -2,11 +2,12 @@ package game;
 import java.util.ArrayList;
 import java.util.Scanner;
 	public class AnswerChecker1 {
-			public static void main(String[] args)  {
+			/*public static void main(String[] args)  {
 			      ArrayList<Question1> cultureQuestions = CultureQuestion1.defineCultureQuestions();
 			      ArrayList<Question1> peopleQuestions = PeopleQuestion1.definePeopleQuestions();
 			      ArrayList<Question1> animalQuestions = AnimalQuestion1.defineAnimalQuestions();
 			      ArrayList<Question1> foodQuestions = FoodQuestion1.defineFoodQuestions();
+			      
 			      
 			      ArrayList<ArrayList<Question1>> allQuestions = new ArrayList<>();
 			      allQuestions.add((cultureQuestions));
@@ -17,29 +18,29 @@ import java.util.Scanner;
 			      ScoreCounter1 score = new Score1(3);
 			      Scanner scanner = new Scanner(System.in);
 			      
-			          // Prompt the user to choose a category
+			         // Prompt the user to choose a category
 			      System.out.println("Which category of question do you want to answer?");
 			      System.out.println("1. Culture");
-			      System.out.println("2. People");
+			      System.out.println("2. People");   //Theses should be 
 			      System.out.println("3. Animal");
 			      System.out.println("4. Food");
 			      System.out.print("Enter the number of the category: ");
-			        int categoryIndex = scanner.nextInt();
-			            scanner.nextLine(); 
+			      int categoryIndex = scanner.nextInt();
+			         scanner.nextLine(); 
 
-			        if (categoryIndex < 1 || categoryIndex > allQuestions.size()) {
+			       if (categoryIndex < 1 || categoryIndex > allQuestions.size()) {
 			                System.out.println("Invalid category number.");
 			                return;
 			            }
 			            
 			        ArrayList<Question1> selectedCategory = allQuestions.get(categoryIndex - 1);
-			        // Print the questions in selected category
+			         //Print the questions in selected category
 			        for (int i = 1; i < selectedCategory.size(); i++) {
 			                System.out.println((i) + ". " + selectedCategory.get(i).getQuestion());
 			            }
 			        // Which question does user want to answer?
 			        System.out.print("Enter the number of the question you want to answer: ");
-		            int questionIndex = scanner.nextInt();
+			        int questionIndex = scanner.nextInt();
 		            scanner.nextLine(); 
 		           
 		            if (questionIndex < 1 || questionIndex > selectedCategory.size()) {
@@ -53,8 +54,9 @@ import java.util.Scanner;
 		           
 		        
 		            System.out.print("Enter your answer: ");
-		            String userInput = scanner.nextLine();
-		            if (selectedQuestion.cultureInputIsCorrect(cultureQuestions, userInput)
+		            
+		            
+					if (selectedQuestion.cultureInputIsCorrect(cultureQuestions, userInput)
 		            		||selectedQuestion.peopleInputIsCorrect(peopleQuestions, userInput)
 		            		|| selectedQuestion.animalInputIsCorrect(animalQuestions, userInput)
 		            		|| selectedQuestion.foodInputIsCorrect(foodQuestions, userInput)) {
@@ -70,11 +72,12 @@ import java.util.Scanner;
 					    }
 		            if (score.getScore() == 5) {
 		            	scanner.close();
-		                 System.out.println("Congratulations! You have guessed all possible answers correctly for this question.");
+		                 //System.out.println("Congratulations! You have guessed all possible answers correctly for this question.");
 		                 System.out.println(selectedQuestion.getAnswers());
 		             }else {
-		            scanner.close();
+		           scanner.close();
 		            System.out.println("Game over!");
 		             } 
 			        }
+			        */
 	}
