@@ -1,41 +1,65 @@
 package game;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class CultureQuestion1 extends ArrayList<Question1> {
-	    public CultureQuestion1(String question, ArrayList<String> answers) {
-	        add(new Question1(question, answers));
+	
+	private String[] qs; 
+	
+	    public CultureQuestion1() {}
+	  
+	    public String getQuestion() {
+	    	String[] myList = {"Sparkling...", "Studio...", "The Great...", "Oh...", "Nicer way to say...", "Who sells the best...", "How to grow...", "Poems about...", "Public schools are...", "Pumpkin spice..."};
+	    	this.qs = myList;
+	    	Random r = new Random();
+	    	int i = r.nextInt(0, myList.length); 
+	    	return myList[i];
 	    }
-	   
-		  
 	    
-	    // Define culture questions
-	    public static CultureQuestion1 defineCultureQuestions() {
-	       
-	    	CultureQuestion1 cultureQuestions = new CultureQuestion1("", new ArrayList<>());
-	        cultureQuestions.add(new Question1("Sparkling ____",
-	                new ArrayList<>(List.of("water", "wine", "ice", "cider", "image carwash"))));
-	        cultureQuestions.add(new Question1("Studio ____",
-	                new ArrayList<>(List.of("one", "mcgee", "ghibli", "apartment", "space"))));
-	        cultureQuestions.add(new Question1("The Great ____",
-	                new ArrayList<>(List.of("Gatsby", "escape", "depression", "raid", "outdoors"))));
-	        cultureQuestions.add(new Question1("Oh ____",
-	                new ArrayList<>(List.of("polly", "brother", "brother, where art thou?", "my baby", "polly dress"))));
-	        cultureQuestions.add(new Question1("Nicer way to say ____",
-	                new ArrayList<>(List.of("homeless", "poor", "stupid", "dumb", "no"))));
-	        cultureQuestions.add(new Question1("Who sells the best ____",
-	                new ArrayList<>(List.of("gas", "carrot cake near me", "diesel fuel", "car batteries", "quality diesel fuel"))));
-	        cultureQuestions.add(new Question1("How to grow ____",
-	                new ArrayList<>(List.of("potatoes", "taller", "garlic", "your hair faster", "strawberries"))));
-	        cultureQuestions.add(new Question1("Poems about ____",
-	                new ArrayList<>(List.of("life", "friendship", "depression", "love", "nature"))));
-	        cultureQuestions.add(new Question1("Public schools are ____",
-	                new ArrayList<>(List.of("better than private", "funded by", "run by", "failing", "the great equalizer"))));
-	        cultureQuestions.add(new Question1("Pumpkin spice ____",
-	                new ArrayList<>(List.of("cake", "latte", "recipe", "creamer", "coffee"))));
-	        return cultureQuestions;
+	    public String[] getAnswers(String s) {
+	    	String[] err = {"error"}; 
+	    	String[] ans1 = {"water", "wine", "ice", "cider", "image carwash"};
+	    	String[] ans2 = {"one", "mcgee", "ghibli", "apartment", "space"};
+	    	String[] ans3 = {"Gatsby", "escape", "depression", "raid", "outdoors"};
+	    	String[] ans4 = {"polly", "brother", "brother, where art thou?", "my baby", "polly dress"};
+	    	String[] ans5 = {"homeless", "poor", "stupid", "dumb", "no"};
+	    	String[] ans6 = {"gas", "carrot cake near me", "diesel fuel", "car batteries", "quality diesel fuel"};
+	    	String[] ans7 = {"potatoes", "taller", "garlic", "your hair faster", "strawberries"};
+	    	String[] ans8 = {"life", "friendship", "depression", "love", "nature"};
+	    	String[] ans9 = {"better than private", "funded by", "run by", "failing", "the great equalizer"};
+	    	String[] ans10 = {"cake", "latte", "recipe", "creamer", "coffee"}; 
+	    	if(s.equals(qs[0])) {
+	    		return ans1; 
+	    	}
+	    	else if(s.equals(qs[1])) {
+	    		return ans2; 
+	    	}
+	    	else if(s.equals(qs[2])) {
+	    		return ans3; 
+	    	}
+	    	else if(s.equals(qs[3])) {
+	    		return ans4; 
+	    	}
+	    	else if(s.equals(qs[4])) {
+	    		return ans5;
+	    	}
+	    	else if(s.equals(qs[5])) {
+	    		return ans6;
+	    	}
+	    	else if(s.equals(qs[6])) {
+	    		return ans7;
+	    	}
+	    	else if(s.equals(qs[7])) {
+	    		return ans8; 
+	    	}
+	    	else if(s.equals(qs[8])) {
+	    		return ans9;
+	    	}
+	    	else if(s.equals(qs[9])) {
+	    		return ans10;
+	    	}
+	    	return err; 
+	    }
 	    
-	        
-	        
-	         }
 	}
