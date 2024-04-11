@@ -10,9 +10,7 @@ public class AnimalQuestion1 extends ArrayList<Question1>{
 	
 	private String[] qs;
 	
-		 public AnimalQuestion1() {
-		       
-		    }
+		 public AnimalQuestion1() {}
 	
 	  public String getQuestion() throws IOException{
 		  String[] myList = {"Do cats...?", "Do  fish ever...?", "Is my cat...?", "Can you pet a...?", "My dog ate my...", "Why are dogs..?", "Is my bird...?", "Where do ____ live?", "Do wolves...?", "Do snakes...?"};
