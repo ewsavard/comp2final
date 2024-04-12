@@ -20,7 +20,7 @@ public class Score1 implements ScoreCounter1{
 
 	@Override
 	    public void decreaseTries() {
-	        this.tries--;
+	        this.tries --;
 	    }
 
 	@Override

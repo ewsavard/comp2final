@@ -13,7 +13,7 @@ public class PeopleQuestion1 extends ArrayList<Question1> {
 	    	Random r = new Random();
 	    	int i = r.nextInt(0, myList.length);
 	    	return myList[i];
-	    }
+	    } 
 	    
 	    public String[] getAnswers(String s) {
 	    	String[] err = {"Error"};
