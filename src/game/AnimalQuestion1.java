@@ -20,6 +20,7 @@ public class AnimalQuestion1 extends ArrayList<Question1>{
 	private String [] as; // answer
 	private TextField word1;
 	private Button button;
+<<<<<<< HEAD
 //	 String[] err = {"error"};
 //	  //String[] ans1 = {"fart", "dream", "cry", "have night vision", "see colors"};
 //	  List<String> ans1 = Arrays.asList("fart", "dream", "cry", "have night vision", "see colors");
@@ -33,16 +34,44 @@ public class AnimalQuestion1 extends ArrayList<Question1>{
 //	  String[] ans9 = {"hunt in packs", "bark", "howl", "eat plants", "live near me"};
 //	  String[] ans10 = {"slither", "breathe through their nose", "have bones", "have ears", "eat rabbits"};
 //	 
+=======
+	 String[] err = {"error"};
+	  //String[] ans1 = {"fart", "dream", "cry", "have night vision", "see colors"};
+	  List<String> ans1 = Arrays.asList("fart", "dream", "cry", "have night vision", "see colors");
+	  String[] ans2 = {"sleep", "get thirsty", "drink water", "stop swimming", "have feelings"};
+	  String[] ans3 = {"depressed", "hungry", "bored", "overweight", "happy"};
+	  String[] ans4 = {"service dog", "fox", "badger", "baby deer", "bird"};
+	  String[] ans5 = {"shoes", "homework", "clothes", "edible", "medicine"};
+	  String[] ans6 = {"noses wet", "loyal", "scared of fireworks", "better than cats", "so cute"};
+	  String[] ans7 = {"sick", "pregnant", "happy", "molting", "choking"};
+	  String[] ans8 = {"lions", "anacondas", "mokeys", "stray cats", "bears"};
+	  String[] ans9 = {"hunt in packs", "bark", "howl", "eat plants", "live near me"};
+	  String[] ans10 = {"slither", "breathe through their nose", "have bones", "have ears", "eat rabbits"};
+	 
+>>>>>>> refs/remotes/origin/main
 	
 	
 	//TextField word_input = (word_in);
 	 
 	
+<<<<<<< HEAD
 
 		
+=======
+<<<<<<< HEAD
+		 public AnimalQuestion1() {
+		       
+		    }
+	@FXML
+=======
+>>>>>>> refs/remotes/origin/main
 		 public AnimalQuestion1() {}
 	
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'main' of https://github.com/ewsavard/comp2final.git
+>>>>>>> refs/remotes/origin/main
 	  public String getQuestion() throws IOException{
 		  String[] myList = {"Do cats...?", "Do  fish ever...?", "Is my cat...?", "Can you pet a...?", "My dog ate my...", "Why are dogs..?", "Is my bird...?", "Where do ____ live?", "Do wolves...?", "Do snakes...?"};
 		  this.qs = myList;
@@ -117,7 +146,32 @@ public class AnimalQuestion1 extends ArrayList<Question1>{
 		    
 	  }
 	  
+<<<<<<< HEAD
 	  
 	  
 
+=======
+	  public void Validate_word ( TextField  text_field) {
+		  
+		//  String word = text_field.getText();
+		  //scene.setFill(c)
+		  
+		  if(text_field.contains((Point2D) ans1)) {
+			  button.setStyle("-fx-background-color: transparent");
+		 
+		  }else {
+			 
+		        button.setTextFill(Color.BLUE);
+		        
+		  }
+		  
+			  
+		  }
+	   	
+	  
+	  
+	  
+	 
+//>>>>>>> refs/remotes/origin/main
+>>>>>>> refs/remotes/origin/main
 }  
