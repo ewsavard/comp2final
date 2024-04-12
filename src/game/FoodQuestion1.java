@@ -8,9 +8,7 @@ public class FoodQuestion1 extends ArrayList<Question1>{
 	
 	public ArrayList questions;
 	
-			public FoodQuestion1() {
-		
-			}
+			public FoodQuestion1() {}
 
 		    
 		    public String getQuestion() {
