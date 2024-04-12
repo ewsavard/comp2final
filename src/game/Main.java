@@ -34,7 +34,7 @@ public class Main extends Application implements Initializable{
 
 		try {
 			//BorderPane root = new BorderPane();
-			Parent root = FXMLLoader.load(getClass().getResource("MainScreen.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("MainScene.fxml"));
 			Scene scene = new Scene(root);
 			//scene.getStylesheets().add(getClass().getResource("Main").toExternalForm());
 
