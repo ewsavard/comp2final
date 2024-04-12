@@ -19,7 +19,7 @@ public class Scene_Controller_Class {
 	
 	
 
-
+/*
 	public Stage stage;
 	private Scene scene; 
 	private Parent root; 
@@ -76,7 +76,7 @@ public class Scene_Controller_Class {
 	
 	
 	
-	
+	*/
 	
 
 

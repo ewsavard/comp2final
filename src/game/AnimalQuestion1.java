@@ -1,64 +1,141 @@
 package game;
+import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
-
+import javafx.fxml.FXML;
+import javafx.geometry.Point2D;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 public class AnimalQuestion1 extends ArrayList<Question1>{
-		 public AnimalQuestion1(String question, ArrayList<String> answers) {
-		        add(new Question1(question, answers));
-		    }
-	    public static AnimalQuestion1 defineAnimalQuestions() {
-	        AnimalQuestion1 animalQuestions = new AnimalQuestion1("", new ArrayList<>());
-	        
-	        if (animalQuestions.equals("Do cats ____?")) {
-	        	
-	        	new ArrayList<>(List.of("fart", "dream", "cry", "have night vision", "see colors"));
-	        	
-	        
-	        	
 
-	        }
-	        animalQuestions.add(new Question1("Do cats ____?", 
-					new ArrayList<>(List.of("fart", "dream", "cry", "have night vision", "see colors"))));
-			animalQuestions.add(new Question1("Do fish ever ____?", 
-					new ArrayList<>(List.of("sleep", "get thirsty", "drink water", "stop swimming", "have feelings"))));
-			animalQuestions.add(new Question1("Is my cat ____?", 
-					new ArrayList<>(List.of("depressed", "hungry", "bored", "overweight", "happy"))));
-			animalQuestions.add(new Question1("Can you pet a ____?", 
-					new ArrayList<>(List.of("service dog", "fox", "badger", "baby deer", "bird"))));
-			animalQuestions.add(new Question1("My dog ate my ____", 
-					new ArrayList<>(List.of("shoes", "homework", "clothes", "edible", "medicine"))));
-			animalQuestions.add(new Question1("Why are dogs ____?", 
-					new ArrayList<>(List.of("noses wet", "loyal", "scared of fireworks", "better than cats", "so cute"))));
-			animalQuestions.add(new Question1("Is my bird ____?", 
-					new ArrayList<>(List.of("sick", "pregnant", "happy", "molting", "choking"))));
-			animalQuestions.add(new Question1("Where do ____ live?", 
-					new ArrayList<>(List.of("lions", "anacondas", "mokeys", "stray cats", "bears"))));
-			animalQuestions.add(new Question1("Do wolves ____?", 
-					new ArrayList<>(List.of("hunt in packs", "bark", "howl", "eat plants", "live near me"))));
-			animalQuestions.add(new Question1("Do snakes ____?", 
-					new ArrayList<>(List.of("slither", "breathe through their nose", "have bones", "have ears", "eat rabbits"))));
-			return animalQuestions;
-			
-	    }
-		 
-		  
+	private String[] qs;  // questions
+	private String [] as; // answer
+	private TextField word1;
+	private Button button;
+	 String[] err = {"error"};
+	  //String[] ans1 = {"fart", "dream", "cry", "have night vision", "see colors"};
+	  List<String> ans1 = Arrays.asList("fart", "dream", "cry", "have night vision", "see colors");
+	  String[] ans2 = {"sleep", "get thirsty", "drink water", "stop swimming", "have feelings"};
+	  String[] ans3 = {"depressed", "hungry", "bored", "overweight", "happy"};
+	  String[] ans4 = {"service dog", "fox", "badger", "baby deer", "bird"};
+	  String[] ans5 = {"shoes", "homework", "clothes", "edible", "medicine"};
+	  String[] ans6 = {"noses wet", "loyal", "scared of fireworks", "better than cats", "so cute"};
+	  String[] ans7 = {"sick", "pregnant", "happy", "molting", "choking"};
+	  String[] ans8 = {"lions", "anacondas", "mokeys", "stray cats", "bears"};
+	  String[] ans9 = {"hunt in packs", "bark", "howl", "eat plants", "live near me"};
+	  String[] ans10 = {"slither", "breathe through their nose", "have bones", "have ears", "eat rabbits"};
+	 
 	
-    
-    
-     // this is the random aspect of this question:
-    
-    
-    
-    	  
-    	  
-    	  //new ArrayList<>(List.of("fart", "dream", "cry", "have night vision", "see colors"));
-  		
+	
+	//TextField word_input = (word_in);
+	 
+	
+		 public AnimalQuestion1() {
+		       
+		    }
+	@FXML
+	  public String getQuestion() throws IOException{
+		  String[] myList = {"Do cats...?", "Do  fish ever...?", "Is my cat...?", "Can you pet a...?", "My dog ate my...", "Why are dogs..?", "Is my bird...?", "Where do ____ live?", "Do wolves...?", "Do snakes...?"};
+		  this.qs = myList;
+		  Random r = new Random();
+		  int i = r.nextInt(0, myList.length);
+		 return myList[i];
+		  
+		//  (myList);
+	  
+	  }
+	 
+	  
+	
+	  
+	  public String[] getAnswers(String s) {
+		  
+		  String[] err = {"error"};
+		  String[] ans1 = {"fart", "dream", "cry", "have night vision", "see colors"};
+		  String[] ans2 = {"sleep", "get thirsty", "drink water", "stop swimming", "have feelings"};
+		  String[] ans3 = {"depressed", "hungry", "bored", "overweight", "happy"};
+		  String[] ans4 = {"service dog", "fox", "badger", "baby deer", "bird"};
+		  String[] ans5 = {"shoes", "homework", "clothes", "edible", "medicine"};
+		  String[] ans6 = {"noses wet", "loyal", "scared of fireworks", "better than cats", "so cute"};
+		  String[] ans7 = {"sick", "pregnant", "happy", "molting", "choking"};
+		  String[] ans8 = {"lions", "anacondas", "mokeys", "stray cats", "bears"};
+		  String[] ans9 = {"hunt in packs", "bark", "howl", "eat plants", "live near me"};
+		  String[] ans10 = {"slither", "breathe through their nose", "have bones", "have ears", "eat rabbits"};
+		  
+		  this.as = ans1;
+		  this.as = ans2;
+		  this.as = ans3;
+		  this.as = ans4;
+		  this.as = ans5;
+		  this.as = ans6;
+		  this.as = ans7;
+		  this.as = ans8;
+		  this.as = ans9;
+		  this.as = ans10;
+		
+		  
+		  if (s.equals(qs[0])) {
+			  return ans1;
+		  }
+		  else if (s.equals(qs[1])) {
+			  return ans2; 
+		  }
+		  else if (s.equals(qs[2])) {
+			  return ans3; 
+		  }
+		  else if(s.equals(qs[3])) {
+			  return ans4;
+		  }
+		  else if(s.equals(qs[4])) {
+			  return ans5; 
+		  }
+		  else if(s.equals(qs[5])) {
+			  return ans6; 
+		  }
+		  else if(s.equals(qs[6])) {
+			  return ans7; 
+		  }
+		  else if (s.equals(qs[7])){
+			  return ans8; 
+		  }
+		  else if(s.equals(qs[8])) {
+			  return ans9; 
+		  }
+		  else if(s.equals(qs[9])) {
+			  return ans10; 
+		  }
+		  return err;
+		    
+	  }
+	  
+	  public void Validate_word ( TextField  text_field) {
+		  
+		//  String word = text_field.getText();
+		  //scene.setFill(c)
+		  
+		  if(text_field.contains((Point2D) ans1)) {
+			  button.setStyle("-fx-background-color: transparent");
+		 
+		  }else {
+			 
+		        button.setTextFill(Color.BLUE);
+		        
+		  }
+		  
+			  
+		  }
+	   	
 	  
 	  
-    	
 	  
+	 
+//>>>>>>> refs/remotes/origin/main
 }  

@@ -3,10 +3,10 @@ package game;
 import java.util.ArrayList;
 
 public class Question1 {
-	    private String question;
-	    private ArrayList<String> answers;
+	   // private String question;
+	   // private ArrayList<String> answers;
 
-	    public Question1(String question, ArrayList<String> answers) {
+	   /* public Question1(String question, ArrayList<String> answers) {
 	        this.question = question;
 	        this.answers = answers;
 	    }
@@ -247,4 +247,6 @@ public class Question1 {
 	    
 
 		
-		}
+		
+		*/
+}
