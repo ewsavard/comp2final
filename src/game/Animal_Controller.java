@@ -31,31 +31,8 @@ public class Animal_Controller extends Application implements Initializable {
 
 	}
 
-	public void Question_random() throws IOException {
-		ArrayList<String> my_list = new ArrayList<String>();
-		my_list.add("Do cats");
-		my_list.add("Do  fish ever");
-		my_list.add("Is my cat ");
-		my_list.add("My dog ate my");
-		my_list.add("Why are dogs");
-		my_list.add("Is my bird");
-		my_list.add("Where do ____ live");
-		my_list.add("Do wolves");
-		my_list.add("Do snakes");
-
-		Collections.shuffle(my_list); // this is the random aspect of this question:
-
-		for (String random_values : my_list) {
-			if (random_values.equals("Do cats ")) {
-				int i = my_list.indexOf(random_values);
-				Text question = new Text(String.format("%s", my_list.get(i)));
-				System.out.print(i);
-				System.out.print(random_values);
-
-				new ArrayList<>(List.of("fart", "dream", "cry", "have night vision", "see colors"));
-
-			}
-		}
-	}
+	
+		
+	
 
 }
