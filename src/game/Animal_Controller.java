@@ -33,6 +33,11 @@ import javafx.stage.Stage;
 	}
 	
 
+<<<<<<< HEAD
+	
+		
+	
+=======
 	public void Question_random() throws IOException {
 		
 		
@@ -65,6 +70,11 @@ import javafx.stage.Stage;
 			}
 		}
 	}
+>>>>>>> branch 'main' of https://github.com/ewsavard/comp2final
 
 }
+<<<<<<< HEAD
+
+=======
 */
+>>>>>>> refs/remotes/origin/main
