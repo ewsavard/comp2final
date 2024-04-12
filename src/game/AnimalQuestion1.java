@@ -38,16 +38,12 @@ public class AnimalQuestion1 extends ArrayList<Question1>{
 	//TextField word_input = (word_in);
 	 
 	
-<<<<<<< HEAD
-		 public AnimalQuestion1() {
-		       
-		    }
-	@FXML
-=======
+
+	//@FXML
+
 		 public AnimalQuestion1() {}
 	
->>>>>>> branch 'main' of https://github.com/ewsavard/comp2final.git
-	  public String getQuestion() throws IOException{
+	public String getQuestion() throws IOException{
 		  String[] myList = {"Do cats...?", "Do  fish ever...?", "Is my cat...?", "Can you pet a...?", "My dog ate my...", "Why are dogs..?", "Is my bird...?", "Where do ____ live?", "Do wolves...?", "Do snakes...?"};
 		  this.qs = myList;
 		  Random r = new Random();
@@ -141,6 +137,5 @@ public class AnimalQuestion1 extends ArrayList<Question1>{
 	  
 	  
 	  
-	 
-//>>>>>>> refs/remotes/origin/main
+
 }  
